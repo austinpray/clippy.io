@@ -1,0 +1,96 @@
+@import "styles/normalize";
+
+// https://color.adobe.com/Phaedra-color-theme-1764754/
+$primary-color: #00A388;
+$secondary-color: #79BD8F;
+$middle-color: #BEEB9F;
+$accent-color: #FFFF9D;
+$complement-color: #FF6138;
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $middle-color;
+  color: $primary-color;
+  font-family: sans-serif;
+}
+
+p {
+  a {
+    &, &:link, &:visited {
+      color: $primary-color;
+    }
+    &:hover, &:active {
+      color: $complement-color;
+    }
+    &:active {
+      color: darken($complement-color, 23%);
+    }
+  }
+}
+
+a.pure-button-primary {
+  background-color: $primary-color;
+}
+
+.main-container {
+  padding: 1rem;
+}
+
+/* Menu */
+.menu {
+  width:100%;
+  background-color: $primary-color;
+}
+
+.menu-nav {
+  padding: 1rem;
+  a {
+    color: white;
+    text-decoration:none;
+  }
+}
+
+.choice-screen {
+  text-align: center;
+}
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.featured-list {
+  padding:0;
+  list-style: none;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+#application {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+
+html, body, #application {
+  height: 100%;
+}
+
+.featured-options {
+}
