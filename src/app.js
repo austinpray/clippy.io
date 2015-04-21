@@ -4,6 +4,7 @@ import Router from "react-router";
 import Clippy from "./components/Clippy";
 import Menu from "./components/Menu";
 import Home from "./components/Home";
+import Sync from "./components/Sync";
 
 var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
@@ -24,6 +25,7 @@ var App = React.createClass({
 var routes = (
   <Route name="app" path="/" handler={App}>
     <DefaultRoute handler={Home}/>
+    <Route name="sync" handler={Sync}/>
   </Route>
 );
 

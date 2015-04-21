@@ -17,7 +17,8 @@ export default React.createClass({
             <li>Nothing stored on server</li>
           </ul>
           <div className="featured-options">
-            <Link to="app" className="pure-button-primary pure-button">Sync With Another Device</Link>
+            <Link to="sync" className="pure-button-primary pure-button">Sync With Another Device</Link>
+            <Link to="sync" className="pure-button-primary pure-button">Sync With Another Device</Link>
           </div>
         </div>
       </div>
